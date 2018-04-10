@@ -1,0 +1,40 @@
+This repository hosts all files for the Günsquad game created on the Android Studio platform using the standard Java and XML libraries.
+
+Günsquad is a simluation-based mobile game in which the user has a list of soldiers they can customize with weapons and armor, and 
+additionally send them out onto missions.  There is a story mode with linear missions in which a simulation engine takes into account the 
+variables each unit has, as well as produce enemies based on the level.  
+The user chooses 3 soldiers to go into a mission, and depending on the outcome, the user acquires money to purchase upgrades to their 
+soldiers, including weapons, armor and perks, which are all accessible through the marketplace.  Additionally, after these missions the 
+soldiers can sustain damage to their health; in this case, they must sit out a couple of missions for their health to regenerate.  They
+can also die in battle, leaving an empty spot in the barracks.  The user can purchase a unit to fill in that spot via the marketplace,
+too.
+
+
+
+GAMEPLAY
+- NEW GAME is the only option added; saving progress is disabled until the project can be closer to completion
+
+
+
+
+
+THEMES OF THIS PROJECT:
+- This game uses in-depth methods of class manipulation, polymorphism and class inheritance.  
+  - Many classes are just sub-classes holding certain variables that are unique to them. For instance:
+    Class AssaultRifle is a sub class of Class Gun, however AssaultRifle gives it's child classes a unique GunID (1) variable that 
+    separates the children from other Gun objects.
+- Many menus utilize custom array adapters to display custom listviews, such as Barracks and the different Market_ layouts.  
+
+
+RUNNING THE PROGRAM:
+The program can run and build successfully; to build:
+- Open the project > Run > Run app > you can run it on the emulator of your choice 
+
+
+
+PROBLEMS:
+This is an on-going project, therefore it is not finished nor fully optimized.  There are many bugs and optimization choices that
+can enhance the app, and therefore the gameplay, that I haven't implemented yet.  Also, there are many layouts that are not fully polished;
+for instance, activity_after_battle_screen does not yet have artwork added to it.  The functionality is still operational.  
+Additionally, the game engine itself in class Attack can be improved; this class is a placeholder for a pseudo-AI program that uses 
+variables to determine who attacks, when they attack, how much damage is done, etc in a simulation-based environment. 
