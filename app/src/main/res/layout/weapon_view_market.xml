@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/acr"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gunpic"
+        android:adjustViewBounds="true"
+        android:maxHeight="120dp"
+        android:maxWidth="120dp"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:text="price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gunprice"
+        android:textSize="18sp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignBaseline="@+id/gunspeed"
+        android:layout_alignBottom="@+id/gunspeed"
+        android:layout_toRightOf="@+id/gunpic"
+        android:layout_toEndOf="@+id/gunpic"
+        android:layout_x="90dp"
+        android:layout_y="33dp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gunname"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/gunprice"
+        android:layout_alignStart="@+id/gunprice"
+        android:layout_x="90dp"
+        android:layout_y="0dp"
+        android:fontFamily="serif"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="damage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp"
+        android:id="@+id/gundam"
+        android:textAlignment="viewStart"
+        android:layout_alignBaseline="@+id/gunname"
+        android:layout_alignBottom="@+id/gunname"
+        android:layout_toRightOf="@+id/gunname"
+        android:layout_toEndOf="@+id/gunname"
+        android:layout_x="335dp"
+        android:layout_y="5dp"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gunacc"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/gunname"
+        android:layout_alignLeft="@+id/gundam"
+        android:layout_alignStart="@+id/gundam"
+        android:layout_x="334dp"
+        android:layout_y="23dp"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gunspeed"
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/gunacc"
+        android:layout_alignLeft="@+id/gunacc"
+        android:layout_alignStart="@+id/gunacc"
+        android:layout_x="335dp"
+        android:layout_y="41dp"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:text="Purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:id="@+id/purchase"
+        android:layout_alignBaseline="@+id/gunacc"
+        android:layout_alignBottom="@+id/gunacc"
+        android:layout_toRightOf="@+id/gunacc"
+        android:layout_toEndOf="@+id/gunacc"
+        android:layout_x="443dp"
+        android:layout_y="8dp"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:textColor="@android:color/background_dark" />
+</AbsoluteLayout>

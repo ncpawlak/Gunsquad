@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/perkpic"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:text="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/perkpic"
+        android:layout_toRightOf="@+id/perkpic"
+        android:layout_toEndOf="@+id/perkpic"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/perkname"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/perkname"
+        android:layout_toRightOf="@+id/perkname"
+        android:layout_toEndOf="@+id/perkname"
+        android:layout_marginLeft="163dp"
+        android:layout_marginStart="163dp"
+        android:id="@+id/perkprice"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="description"
+        android:layout_height="50dp"
+        android:id="@+id/perkdescription"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBottom="@+id/perkpic"
+        android:layout_alignLeft="@+id/perkname"
+        android:layout_alignStart="@+id/perkname"
+        android:layout_width="300dp" />
+
+    <Button
+        android:text="Purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="69dp"
+        android:layout_marginEnd="69dp"
+        android:id="@+id/purchase"
+        android:layout_below="@+id/perkprice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:textColor="@android:color/background_dark" />
+</RelativeLayout>

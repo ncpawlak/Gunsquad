@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/acr"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
+        android:id="@+id/secondary"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/pdam"
+        android:layout_toEndOf="@+id/pdam"
+        android:clickable="true"
+        android:layout_x="403dp"
+        android:layout_y="-1dp" />
+
+    <TextView
+        android:text="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/soldierpic"
+        android:layout_toEndOf="@+id/soldierpic"
+        android:id="@+id/soldiername"
+        android:layout_x="85dp"
+        android:layout_y="3dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/acr"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/soldierpic"
+        android:adjustViewBounds="true"
+        android:layout_x="0dp"
+        android:layout_y="1dp" />
+
+    <TextView
+        android:text="level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soldiername"
+        android:layout_toRightOf="@+id/soldierpic"
+        android:layout_toEndOf="@+id/soldierpic"
+        android:layout_marginTop="11dp"
+        android:id="@+id/soldierlevel"
+        android:layout_x="87dp"
+        android:layout_y="30dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/m4"
+        android:id="@+id/primary"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/soldiername"
+        android:layout_toEndOf="@+id/soldiername"
+        android:layout_x="217dp"
+        android:layout_y="1dp" />
+
+    <TextView
+        android:text="dam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/pdam"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/primary"
+        android:layout_toEndOf="@+id/primary"
+        android:layout_x="300dp"
+        android:layout_y="1dp" />
+
+    <TextView
+        android:text="acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pacc"
+        android:layout_toEndOf="@+id/primary"
+        android:layout_below="@+id/pdam"
+        android:layout_toRightOf="@+id/primary"
+        android:layout_x="301dp"
+        android:layout_y="19dp" />
+
+    <TextView
+        android:text="sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pspeed"
+        android:layout_below="@+id/pacc"
+        android:layout_toRightOf="@+id/primary"
+        android:layout_toEndOf="@+id/primary"
+        android:layout_x="302dp"
+        android:layout_y="36dp" />
+
+    <TextView
+        android:text="sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pspeed"
+        android:layout_toRightOf="@+id/secondary"
+        android:layout_toEndOf="@+id/secondary"
+        android:id="@+id/sspeed"
+        android:layout_x="487dp"
+        android:layout_y="34dp" />
+
+    <TextView
+        android:text="acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdam"
+        android:layout_toRightOf="@+id/secondary"
+        android:layout_toEndOf="@+id/secondary"
+        android:id="@+id/sacc"
+        android:layout_x="486dp"
+        android:layout_y="18dp" />
+
+    <TextView
+        android:text="dam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/secondary"
+        android:layout_toEndOf="@+id/secondary"
+        android:id="@+id/sdam"
+        android:layout_x="485dp"
+        android:layout_y="0dp" />
+
+</AbsoluteLayout>

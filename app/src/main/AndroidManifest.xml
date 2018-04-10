@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rapturedshadows.gunsquad">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".advancedstatsofunit"
+            android:theme="@style/AppTheme.CustomBackground" />
+        <activity android:name=".playerScreen" />
+        <activity android:name=".Mission_Screen" />
+        <activity android:name=".Market_MainScreen" />
+        <activity android:name=".Market_AssaultRifles" />
+        <activity android:name=".Market_SniperRifles" />
+        <activity
+            android:name=".armorofunit"
+            android:theme="@style/AppTheme.CustomBackground" />
+        <activity android:name=".purchase_screen" />
+        <activity android:name=".purchase_screen_perks" />
+        <activity android:name=".purchase_screen_attachments" />
+        <activity android:name=".Market_Perks" />
+        <activity android:name=".Market_SMGs" />
+        <activity android:name=".market_LMGs" />
+        <activity android:name=".Select_Units_For_Mission" />
+        <activity android:name=".Attack" />
+        <activity android:name=".afterBattleScreen" />
+        <activity android:name=".Barracks" />
+        <activity android:name=".Market_pistols" />
+        <activity android:name=".Market_Attachments" />
+        <activity android:name=".Market_Scopes" />
+        <activity android:name=".Market_Barrels" />
+        <activity android:name=".Market_Clips" />
+        <activity android:name=".Market_Accessories" />
+        <activity android:name=".Market_Grips"></activity>
+    </application>
+
+</manifest>

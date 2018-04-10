@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_armorofunit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rapturedshadows.gunsquad.armorofunit"
+    android:background="@android:color/holo_blue_bright">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="name"
+                android:id="@+id/soldiername"
+                android:textSize="36sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/soldierlevel"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/health"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="helm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/helmet" />
+
+            <TextView
+                android:text="shoulder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoulders" />
+
+            <TextView
+                android:text="chest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chest" />
+
+            <TextView
+                android:text="forearm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/forearms" />
+
+            <TextView
+                android:text="leg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/legs" />
+
+            <ImageView
+                app:srcCompat="@drawable/pic"
+                android:id="@+id/helmetpic"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:layout_width="300dp"
+                app:srcCompat="@drawable/pic"
+                android:id="@+id/shoulderpic"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/pic"
+                android:id="@+id/chestpic" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/pic"
+                android:id="@+id/forearmpic" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/pic"
+                android:id="@+id/legpic"
+                android:adjustViewBounds="true" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

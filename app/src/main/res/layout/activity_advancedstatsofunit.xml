@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advancedstatsofunit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rapturedshadows.gunsquad.advancedstatsofunit"
+    android:background="@android:color/black">
+
+
+    <TextView
+        android:text="Name: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/soldiername"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="XP: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soldierlevel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/soldierxp"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/acr"
+        android:id="@+id/secondary"
+
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="52dp"
+        android:layout_marginEnd="52dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/primary"
+        android:layout_alignLeft="@+id/primary"
+        android:layout_alignStart="@+id/primary"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/primaryname" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/primaryname"
+        android:layout_alignRight="@+id/secondary"
+        android:layout_alignEnd="@+id/secondary"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/secondaryName"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="Dam: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primary"
+        android:layout_alignLeft="@+id/primary"
+        android:layout_alignStart="@+id/primary"
+        android:layout_marginTop="26dp"
+        android:id="@+id/primarydamage"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Acc: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primarydamage"
+        android:layout_alignLeft="@+id/primarydamage"
+        android:layout_alignStart="@+id/primarydamage"
+        android:id="@+id/primaryaccuracy"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Sp: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primaryaccuracy"
+        android:layout_alignLeft="@+id/primaryaccuracy"
+        android:layout_alignStart="@+id/primaryaccuracy"
+        android:id="@+id/primaryspeed"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Dam: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/primarydamage"
+        android:layout_alignLeft="@+id/secondaryName"
+        android:layout_alignStart="@+id/secondaryName"
+        android:id="@+id/secondarydamage"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Acc: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/primaryaccuracy"
+        android:layout_alignLeft="@+id/secondarydamage"
+        android:layout_alignStart="@+id/secondarydamage"
+        android:id="@+id/secondaryaccuracy"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Sp: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondaryaccuracy"
+        android:layout_alignLeft="@+id/secondaryaccuracy"
+        android:layout_alignStart="@+id/secondaryaccuracy"
+        android:id="@+id/secondaryspeed"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Dam: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/primaryaccuracy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/soldierdamage"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Acc: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soldierdamage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/soldieraccuracy"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Def: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soldierdefense"
+        android:layout_below="@+id/soldieraccuracy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Sp: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soldierdefense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/soldierspeed"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Grip: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/primarygrip"
+        android:layout_below="@+id/primarysight"
+        android:layout_alignLeft="@+id/primarysight"
+        android:layout_alignStart="@+id/primarysight"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Clip: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primarygrip"
+        android:layout_alignLeft="@+id/primarygrip"
+        android:layout_alignStart="@+id/primarygrip"
+        android:id="@+id/primaryclip"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Health: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soldierhealth"
+        android:layout_below="@+id/primaryname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Barrel: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primaryaccessory"
+        android:layout_alignLeft="@+id/primaryaccessory"
+        android:layout_alignStart="@+id/primaryaccessory"
+        android:id="@+id/primarybarrel"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Sight: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/primarysight"
+        android:layout_alignLeft="@+id/secondaryspeed"
+        android:layout_alignStart="@+id/secondaryspeed"
+        android:id="@+id/secondarysight"
+        android:textStyle="normal|italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Grip: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondarygrip"
+        android:layout_below="@+id/secondarysight"
+        android:layout_alignLeft="@+id/secondarysight"
+        android:layout_alignStart="@+id/secondarysight"
+        android:textStyle="normal|italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Clip: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/primaryaccessory"
+        android:layout_alignLeft="@+id/secondarygrip"
+        android:layout_alignStart="@+id/secondarygrip"
+        android:id="@+id/secondaryclip"
+        android:textStyle="normal|italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Acc: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondaryclip"
+        android:layout_alignLeft="@+id/secondaryclip"
+        android:layout_alignStart="@+id/secondaryclip"
+        android:id="@+id/secondaryaccessory"
+        android:textStyle="normal|italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Barrel: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/primarybarrel"
+        android:layout_alignLeft="@+id/secondaryaccessory"
+        android:layout_alignStart="@+id/secondaryaccessory"
+        android:id="@+id/secondarybarrel"
+        android:textStyle="normal|italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Sight: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/primarysight"
+        android:layout_below="@+id/primaryspeed"
+        android:layout_alignLeft="@+id/primaryspeed"
+        android:layout_alignStart="@+id/primaryspeed"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Acc: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/primaryaccessory"
+        android:layout_below="@+id/primaryclip"
+        android:layout_alignLeft="@+id/primaryclip"
+        android:layout_alignStart="@+id/primaryclip"
+        android:textStyle="italic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="Level: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soldierlevel"
+        android:layout_above="@+id/primaryname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/acr"
+        android:id="@+id/primary"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/backtobarracks"
+        android:layout_toEndOf="@+id/backtobarracks"
+         />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backtobarracks"
+        android:layout_alignBottom="@+id/primarybarrel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@android:style/Widget.DeviceDefault.Button.Inset" />
+
+
+</RelativeLayout>

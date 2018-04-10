@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#80000000">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/acr"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:id="@+id/soldierpic"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:text="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/soldierpic"
+        android:layout_toEndOf="@+id/soldierpic"
+        android:id="@+id/soldiername"
+        android:clickable="true"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/health"
+        android:layout_alignBaseline="@+id/allstats"
+        android:layout_alignBottom="@+id/allstats"
+        android:layout_toLeftOf="@+id/allstats"
+        android:layout_toStartOf="@+id/allstats"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soldierlevel"
+        android:layout_below="@+id/health"
+        android:layout_toRightOf="@+id/soldierpic"
+        android:layout_toEndOf="@+id/soldierpic"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+    <Button
+        android:text="AdvancedStats"
+        android:id="@+id/allstats"
+        android:layout_marginRight="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soldierlevel"
+        android:layout_toRightOf="@+id/soldierpic"
+        android:layout_toEndOf="@+id/soldierpic"
+        android:id="@+id/xp"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="monospace" />
+
+</RelativeLayout>

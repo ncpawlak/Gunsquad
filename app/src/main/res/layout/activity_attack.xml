@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_attack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rapturedshadows.gunsquad.Attack">
+
+    <TextView
+        android:text="Attacking.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/damage" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/damage"
+        android:layout_alignLeft="@+id/damage"
+        android:layout_alignStart="@+id/damage"
+        android:layout_marginTop="26dp"
+        android:id="@+id/accuracy" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accuracy"
+        android:layout_alignLeft="@+id/accuracy"
+        android:layout_alignStart="@+id/accuracy"
+        android:layout_marginTop="23dp"
+        android:id="@+id/speed" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:id="@+id/edamage"
+        android:layout_alignBaseline="@+id/damage"
+        android:layout_alignBottom="@+id/damage"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/speed"
+        android:layout_alignLeft="@+id/edamage"
+        android:layout_alignStart="@+id/edamage"
+        android:id="@+id/eaccuracy" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/speed"
+        android:layout_alignLeft="@+id/eaccuracy"
+        android:layout_alignStart="@+id/eaccuracy"
+        android:id="@+id/espeed" />
+
+    <Button
+        android:text="Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/finish" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/defense"
+        android:layout_alignBaseline="@+id/finish"
+        android:layout_alignBottom="@+id/finish"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toEndOf="@+id/back"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:layout_alignBaseline="@+id/defense"
+        android:layout_alignBottom="@+id/defense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edefense"
+        android:layout_alignBaseline="@+id/defense"
+        android:layout_alignBottom="@+id/defense"
+        android:layout_toLeftOf="@+id/espeed"
+        android:layout_toStartOf="@+id/espeed"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+</RelativeLayout>
